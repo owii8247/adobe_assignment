@@ -20,7 +20,7 @@ app.get("/", async(req,res)=>{
 
 // Routes
  app.use("/", userRoutes)
-//app.use("/",postRoutes)
+app.use("/",postRoutes)
 
 
 // Listening
