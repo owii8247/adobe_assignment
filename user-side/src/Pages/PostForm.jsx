@@ -8,6 +8,7 @@ import {
   Textarea,
   Button,
   useToast,
+  Heading,
 } from "@chakra-ui/react";
 import axios from "axios";
 
@@ -64,6 +65,9 @@ const PostForm = () => {
   return (
     <Flex justify="center" py={10}>
       <Box w={{ base: "100%", md: "50%" }}>
+      <Heading as="h1" size="xl" mb={4}>
+        Post Form
+      </Heading>
         <form onSubmit={handleSubmit}>
         <FormControl mb={4}>
             <FormLabel>Id</FormLabel>

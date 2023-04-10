@@ -19,6 +19,7 @@ import {
     FormLabel,
     Input,
     Textarea,
+    Heading,
 } from "@chakra-ui/react";
 import axios from "axios";
 
@@ -107,6 +108,9 @@ console.log("selected", selectedUser)
 
     return (
         <Box overflowX="auto">
+            <Heading as="h1" size="xl" mb={4}>
+        User List
+      </Heading>
             {isLoading ? (
                 <Spinner size="xl" />
             ) : (
