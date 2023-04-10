@@ -53,7 +53,7 @@ const UserAnalytics = () => {
                   {mostActiveUsers.map((user) => (
                     <Tr key={user._id}>
                       <Td>{user._id}</Td>
-                      <Td>{user.count}</Td>
+                      <Td>{user.postCount}</Td>
                     </Tr>
                   ))}
                 </Tbody>
