@@ -176,7 +176,7 @@ const PostList = () => {
           <Tbody>
             {posts.map((post) => (
               <Tr key={post.id}>
-                <Td>{post._id}</Td>
+                <Td>{post.id}</Td>
                 <Td>{post.user_id}</Td>
                 <Td>{post.content}</Td>
                 <Td>
