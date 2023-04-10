@@ -14,7 +14,7 @@ import axios from "axios";
 
 const PostForm = () => {
   const[id, setId] = useState("")
-  const [userId, setUserId] = useState("");
+  const [user_id, setUserId] = useState("");
   const [content, setContent] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const toast = useToast();
@@ -37,7 +37,7 @@ const PostForm = () => {
   
     try {
       const response = await axios.post("https://adobe-backend-sx70.onrender.com/posts",
-        {id, userId, content }
+        {id, user_id, content }
       );
       console.log("res",response)
       setId("")
@@ -82,7 +82,7 @@ const PostForm = () => {
             <FormLabel>User Id</FormLabel>
             <Input
               type="text"
-              value={userId}
+              value={user_id}
               onChange={(event) => setUserId(event.target.value)}
               required
             />

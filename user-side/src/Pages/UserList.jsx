@@ -22,6 +22,7 @@ import {
     Heading,
 } from "@chakra-ui/react";
 import axios from "axios";
+import {AiOutlineDelete, AiOutlineEdit} from "react-icons/ai"
 
 const UserList = () => {
     const [users, setUsers] = useState([]);
@@ -122,6 +123,7 @@ console.log("selected", selectedUser)
                             <Th>Bio</Th>
                             <Th>Edit</Th>
                             <Th>Delete</Th>
+                            
                         </Tr>
                     </Thead>
                     <Tbody>
@@ -132,14 +134,15 @@ console.log("selected", selectedUser)
                                 <Td>{user.bio}</Td>
                                 <Td>
                                     <Button onClick={() => handleEditButtonClick(user)}>
-                                        Edit
+                                    <AiOutlineEdit style={{color:"tomato"}}/>
                                     </Button>
                                 </Td>
                                 <Td>
                                     <Button onClick={() => handleDeleteButtonClick(user)}>
-                                        Delete
+                                        <AiOutlineDelete style={{color:"red"}}/>
                                     </Button>
                                 </Td>
+                                
                             </Tr>
                         ))}
                     </Tbody>

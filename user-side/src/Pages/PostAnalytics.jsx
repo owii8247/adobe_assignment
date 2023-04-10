@@ -53,7 +53,7 @@ const PostAnalytics = () => {
                   {mostLikedPosts.map((post) => (
                     <Tr key={post._id}>
                       <Td>{post._id}</Td>
-                      <Td>{post.count}</Td>
+                      <Td>{post.likes}</Td>
                     </Tr>
                   ))}
                 </Tbody>
