@@ -11,7 +11,7 @@ import PostAnalytics from '../Pages/PostAnalytics'
 const MainRoutes = () => {
   return (
     <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<UserForm />} />
         <Route path="/user-form" element={<UserForm />} />
         <Route path="/user-list" element={<UserList />} />
         <Route path="/post-form" element={<PostForm />} />
