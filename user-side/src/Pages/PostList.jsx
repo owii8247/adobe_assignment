@@ -165,6 +165,7 @@ const PostList = () => {
           <Thead>
             <Tr>
               <Th>Id</Th>
+              <Th>_Id</Th>
               <Th>User Id</Th>
               <Th>Content</Th>
               <Th>Edit</Th>
@@ -177,6 +178,7 @@ const PostList = () => {
             {posts.map((post) => (
               <Tr key={post.id}>
                 <Td>{post.id}</Td>
+                <Td>{post._id}</Td>
                 <Td>{post.user_id}</Td>
                 <Td>{post.content}</Td>
                 <Td>
